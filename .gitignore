@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+*.egg-info/
+
+# Tool caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Lab runtime artifacts (containerlab writes per-lab state next to the topology)
+clab-*/
+.clab-*
+*.clab.yml.bak
+
+# Packet captures: large and regenerable. Curated examples live in docs/captures/.
+captures/*
+!captures/.gitkeep
+*.pcap
+*.pcapng
+!docs/captures/*.pcap
+
+# Raw experiment scratch output; summarized results under experiments/results/ are committed.
+experiments/runs/
+
+# Secrets never belong here
+.env
+*.pem
+*.key
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
